@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Mono&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #606C38;
+    --secondary-color: #283618;
+    --accent1-color: #FEFAE0;
+    --accent2-color: #DDA15E;
+
+    --heading-font: "Roboto Mono", monospace;
+    --paragraph-font: "Open Sans", sans-serif;
+    
+    --nav-background-color: #BC6C25;
+    --nav-link-color: #000000;
+    --nav-hover-link-color: #FFFFFF;
+    --nav-hover-background-color: #BC6C25;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color)
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+
+/*Class Selector*/
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 100px;
+    background-color: rgba(100, 84, 4, .2);
+    text-align: center;
+    padding-right: 143px;
+    padding-left: 143px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    background-color: rgba(100, 84, 4, .6);
+}
+
+.article-image img {
+    width: 150px;
+    float:right
+}
