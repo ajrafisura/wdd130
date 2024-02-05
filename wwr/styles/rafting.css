@@ -35,8 +35,20 @@ h1, h2, h3, h4, h5, h6 {
 header {
     padding: 20px;
     background-color: var(--accent1-color);
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#DDA15E;
+    grid-gap: 1rem
 }
 
+header img {
+    width: auto;
+    height: auto;
+}
 p {
     padding: 25px;
 }
@@ -45,13 +57,14 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: space-around;
 }
 
 nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
+    padding: 1rem;    
 }
 
 nav a:link, nav a:visited {
@@ -63,6 +76,44 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+.history h2 {
+    justify-self: center;
+    grid-column: 1/4;
+}
+
+.history img {
+    display: flex;
+    justify-self: center;
+    grid-column: 2/3;
+}
+
+.history p {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+.adventure-pictures h2 {
+    display: flex;
+    grid-column: 1/6;
+    justify-self: center;
+}
+
+.adventure-pictures img {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+footer {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    border-top: solid;
+    border-color: #a58a0399;
+    border-width: 1px;
+    margin-top: 1rem;
+    background-color: var(--accent1-color);
+}
 
 /*Class Selector*/
 .hero {
@@ -73,6 +124,7 @@ nav a:hover {
     display: block;
     width: 100%;
     height: auto;
+    padding-bottom: 1rem;
 }
 
 .hero h1 {
@@ -88,10 +140,43 @@ nav a:hover {
     position: absolute;
     bottom: 100px;
     left: 20px;
-    background-color: rgba(100, 84, 4, .6);
+    background-color: #a58a0399;
 }
 
 .article-image img {
     width: 150px;
-    float:right
+    height: auto;
+    float:right;
+}
+
+.history {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a58a0399;
+}
+
+.adventure-pictures {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr;
+    gap: 10px;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a58a0399;
+    padding: 1rem;
+    margin-top: 1rem
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
 }
