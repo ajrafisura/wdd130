@@ -130,7 +130,7 @@ footer {
 .hero h1 {
     position: absolute;
     top: 100px;
-    background-color: rgba(100, 84, 4, .2);
+    background-color: rgba(247, 234, 65, 0.8);
     text-align: center;
     padding-right: 143px;
     padding-left: 143px;
@@ -140,10 +140,10 @@ footer {
     position: absolute;
     bottom: 100px;
     left: 20px;
-    background-color: #a58a0399;
+    background-color: rgba(247, 234, 65, 0.4);
 }
 
-.main-article-image img {
+.h1-article-image img {
     width: 150px;
     height: auto;
     float:right;
