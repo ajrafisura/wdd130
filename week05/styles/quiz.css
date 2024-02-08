@@ -86,7 +86,7 @@ footer {
     display: grid;
     align-items: center;
     padding: 1rem;
-    grid-gap:
+    grid-gap: 0.4em;
 }
 
 .question4 {
