@@ -285,7 +285,7 @@ fieldset {
 }
 legend {
     padding: 0.5rem;
-    color: var(--primary-color);
+    color: black;
     font-size: 1.3rem
 }
 
@@ -589,4 +589,8 @@ td {
     font-size: 1.2rem;
     font-weight: 600;
     background-color: darkgreen;
+}
+
+.index {
+    color: black;
 }
