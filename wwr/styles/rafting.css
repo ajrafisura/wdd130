@@ -481,7 +481,7 @@ td {
 .hero-home h1 {
     position: absolute;
     top: 20px;
-    background-color: rgba(241, 241, 238, 0.4);
+    background-color: rgba(241, 241, 238, 0.7);
     text-align: center;
     padding-right: 143px;
     padding-left: 143px;
@@ -490,11 +490,12 @@ td {
 .hero-home p {
     position: absolute;
     top: 30%;
-    left: 220px;
-    background-color: rgba(241, 241, 238, 0.7);
-    font-size: 1.3rem;
+    left: 190px;
+    background-color: rgba(241, 241, 238, 0.75);
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
+    padding: 0.5rem;
 }
 
 .hero-home a {
@@ -509,6 +510,83 @@ td {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
-    background-color: var(--accent2-color);
+    background-color: green;
     color: white;
+}
+
+.hero-home a:hover {
+    position: absolute;
+    top: 70%;
+    left: 380px;
+    border: 1px solid black;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: darkgreen;
+}
+
+.index {
+    padding: 0.2rem;
+    color: var(--primary-color);
+}
+
+.camp-raft-bonfire {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    margin-top: 1rem;
+    border-top: .5px solid var(--accent2-color);
+    padding-bottom: 0.5rem;
+}
+
+.camp-raft-bonfire h2 {
+    grid-area: 1/1/2/4;
+    text-align: center;
+    padding: .5rem;
+}
+
+.camp-raft-bonfire img {
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-end;
+    padding-top: 0.5rem;
+}
+
+.camp-raft-bonfire figcaption {
+    text-align: center;
+    font: 1.5em sans-serif;
+    padding: .5rem;
+}
+
+.camp-raft-bonfire a {
+    border: 1px solid black;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: green;
+    color: white;
+    margin: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.camp-raft-bonfire a:hover {
+    border: 1px solid black;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: darkgreen;
 }
